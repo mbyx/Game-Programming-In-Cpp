@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main Loop.cpp">
+    <ClCompile Include="Pong.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Ball.h">

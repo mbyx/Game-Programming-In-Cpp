@@ -24,6 +24,7 @@
     <ProjectGuid>{bc17a82a-7a25-4eda-be4e-6d9b74266f69}</ProjectGuid>
     <RootNamespace>MainLoop</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Pong</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -133,7 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ball.h" />
-    <ClCompile Include="Main Loop.cpp" />
+    <ClCompile Include="Pong.cpp" />
     <ClCompile Include="Paddle.h" />
     <ClCompile Include="Vec2D.h" />
   </ItemGroup>

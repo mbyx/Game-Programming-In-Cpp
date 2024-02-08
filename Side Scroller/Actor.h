@@ -21,6 +21,7 @@ public:
 
 	virtual ~Actor() {
 		for (auto component : mComponents) {
+			RemoveComponent(component);
 			delete component;
 		}
 	}
@@ -33,6 +34,7 @@ public:
 	}
 
 	void UpdateComponents(float delta) {
+		// Larger update order will update faster.
 		std::sort(mComponents.begin(), mComponents.end(), [](Component* const a, Component* const b) {
 			return a->GetUpdateOrder() < b->GetUpdateOrder();
 			});

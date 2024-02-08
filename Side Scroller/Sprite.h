@@ -8,6 +8,7 @@ class Sprite : public Component {
 public:
 	Sprite(Actor* owner, int drawOrder = 1) : Component(owner) {
 		mDrawOrder = drawOrder;
+		owner->AddComponent(this);
 	}
 
 	~Sprite() {
@@ -32,6 +33,10 @@ public:
 		mTexture = texture;
 
 		SDL_QueryTexture(texture, nullptr, nullptr, &mTextureWidth, &mTextureHeight);
+	}
+
+	void SetDrawOrder(int drawOrder) {
+		mDrawOrder = drawOrder;
 	}
 
 	int GetDrawOrder() const { return mDrawOrder; }

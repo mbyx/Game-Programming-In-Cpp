@@ -136,12 +136,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="AnimatedSprite.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="BackgroundSprite.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="Ship.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="Vec2D.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Side Scroller.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="Side Scroller.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
